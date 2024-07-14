@@ -1,0 +1,68 @@
+/* sidenav */
+#sideNav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+    z-index: 999;
+    display: flex;
+    
+}
+#sideNav .sidenav-content{
+    background-color: blue;
+    padding: 10px;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+}
+.i{
+    cursor: pointer;
+}
+li{
+    top: 0;
+    width: 150px;
+
+}
+
+
+
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.headers{
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    transition: top .5s;
+}
+.img:hover .headers{
+    top: 0%;
+    background-color:  #f9f6f6ca;
+}
+ .headers{
+    height: 100%;
+    width:  100%;
+    overflow: hidden;
+}
+.headers h2{
+    overflow: hidden;
+   position: absolute;
+   top: 50%;
+
+}
+.img{
+    overflow: hidden;
+    position: relative;
+}
+.i i{
+    font-size: 30px;
+}
+a {
+    list-style: none; 
+    color: white; 
+    text-decoration: none;
+}

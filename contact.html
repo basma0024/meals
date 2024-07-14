@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body class="bg-black">
+     
+   
+
+    <div id="sideNav">
+        
+        <div class=" sidenav-content bg-black text-white p-4 d-flex flex-column justify-content-between ">
+
+                <div class="links ">
+                    <ul class="list-unstyled">
+                        <li class="search py-2 fs-5" onclick="showSearch(); closeNAv();">
+                            <a href="search.html">search</a>
+                        
+                        </li>
+                        
+                        <li class=" py-2 fs-5" onclick="getCategory(); closeNAv();">
+                            <a href="category.html" >
+                                Categories
+                            </a>
+                        </li>
+                        <li class=" py-2 fs-5" onclick="getArea(); closeNAv();">
+                            <a href="area.html">
+                                Area
+                            </a>
+                        </li>
+                        <li class=" py-2 fs-5" onclick="getIngredients(); closeNAv();">
+                            <a href="ingredients.html">
+
+                                Ingredients
+                            </a>
+                        </li>
+                        <li class=" py-2 fs-5" onclick=" closeNAv();">
+                            <a href="contact.html">
+
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <p>Copyright Â© 2019 All Rights <br>
+                        Reserved.</p>
+                </div>
+
+        </div> 
+         
+        <div class="icon d-flex flex-column justify-content-between py-4 text-center text-black bg-white px-2 h-100">
+            <a href="index.html" onclick=" getMeals(); closeNAv();">
+                <img src="imgs/logo.png" alt="" >
+            </a>
+            <p class="i " ><i class="fa-solid fa-bars"></i></p>
+            <p><i class="fa-solid fa-globe"></i> <br>
+                <i class="fa-solid fa-share-nodes"></i>
+            </p>
+        
+        </div>
+    </div> 
+
+
+
+
+
+
+    
+        <div class="contact   position-absolute top-50 start-50 translate-middle d-flex  align-items-center flex-column">
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <input type="text" id="name" oninput="validate('name', 'name', nameAlert)" placeholder="Enter ur Name" class="w-100 p-2 rounded-2 my-2 border-0 form-control nameInput">
+                        <div class="alert alert-danger my-2 nameAlert d-none">
+                            Special characters and numbers not allowed
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <input type="text" id="email" placeholder="Enter ur email" class="emailInput w-100 p-2 rounded-2 my-2 border-0 form-control"  oninput="validate('email', 'email', emailAlert)">
+                        <div class="alert alert-danger my-2 emailAlert d-none">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" id="phone" placeholder="Enter ur Phone" class="w-100 p-2 rounded-2 my-2 border-0 form-control"  oninput="validate('phone', 'phone', phoneAlert)" >
+                        <div class="alert alert-danger my-2 phoneAlert d-none">
+                            Enter valid Phone Number
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" id="age" placeholder="Enter ur age" class="w-100 p-2 rounded-2 my-2 border-0 form-control" oninput="validate('age', 'age', ageAlert)">
+                        <div class="alert alert-danger my-2 ageAlert d-none">
+                            Enter valid age
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="pass" placeholder="Enter ur Password" class="w-100 p-2 rounded-2 my-2 border-0 form-control" oninput="validate('pass', 'password', passAlert)">
+                        <div class="alert alert-danger my-2 passAlert d-none">
+                            Enter valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="repass" oninput="repasswordValidation()" placeholder="Repassword" class="w-100 p-2 rounded-2 my-2 border-0 form-control">
+                        <div class="alert alert-danger my-2 repassAlert d-none">
+                            Enter Valid Repassword
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+            <button class="btn btn-outline-danger px-3 py-2 my-3" disabled>submit</button>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+
+</html>
